@@ -608,35 +608,35 @@
             </div>
             <div class="modal-body">
               <p class="lead">Fill out this form and we will get back to you</p>
-              <form onsubmit="sendEmail(); reset(); return false; ">
+              <form action="mail.php" method="POST" onsubmit="sendEmail(); reset(); return false; ">
                 <div class="mb-3">
                   <label for="first-name" class="col-form-label">
                     First Name:
                   </label>
-                  <input type="text" class="form-control" id="first-name" />
+                  <input type="text" name="firstname" class="form-control" id="first-name" />
                 </div>
                 <div class="mb-3">
-                  <label for="last-name" class="col-form-label">
+                  <label for="last-name"  class="col-form-label">
                     Last Name:
                 </label>
-                  <input type="text" class="form-control" id="last-name" />
+                  <input type="text" name="lastname" class="form-control" id="last-name" />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="col-form-label">
                     Email:
                 </label>
-                  <input type="email" class="form-control" id="email" />
+                  <input type="email" name="email" class="form-control" id="email" />
                 </div>
                 <div class="mb-3">
-                  <label for="phone" class="col-form-label">
+                  <label for="phone"  class="col-form-label">
                     Phone:
                 </label>
-                  <input type="tel" class="form-control" id="phone" />
+                  <input type="tel"  name="tel" class="form-control" id="phone" />
                   <div class="mb-3">
                     <label for="phone" class="col-form-label">
                       Message:
                   </label>
-                    <input type="msg" class="form-control" id="message" />
+                    <input type="text" name="message" class="form-control" id="message" />
                 </div>
               </form>
             </div>
