@@ -174,7 +174,7 @@
               <p>
                 
               </p>
-              <a href="#" class="btn btn-light mt-3">
+              <a href="https://www.facebook.com/profile.php?id=100087495930277" class="btn btn-light mt-3">
                 <i class="bi bi-chevron-right"></i> Read More
               </a>
             </div>
@@ -529,14 +529,14 @@
                   <div class="contact">
                     <h3>Email Us</h3>
                     <div class="alert">Your message has been sent, thank you</div>
-                    <form id="contactForm">
+                    <form action="mail.php" method="POST" onsubmit="sendEmail(); reset(); return false; " id="contactForm">
                       <p>
-                        <label>Name</label>
-                        <input type="text" name="name" id="name" required>
+                        <label>First Name</label>
+                        <input type="text" name="name" id="firstname" required>
                       </p>
                       <p>
-                        <label>Company</label>
-                        <input type="text" name="company" id="company">
+                        <label>Last Name</label>
+                        <input type="text" name="company" id="lastname">
                       </p>
                       <p>
                         <label>Email Address</label>
@@ -544,7 +544,7 @@
                       </p>
                       <p>
                         <label>Phone Number</label>
-                        <input type="text" name="phone" id="phone">
+                        <input type="text" name="phone" id="tel">
                       </p>
                       <p class="full">
                         <label>Message</label>
