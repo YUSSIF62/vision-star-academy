@@ -87,15 +87,12 @@
 
                     <p class="lead my-4">
                         Our vision is to be a model learning institution recognized globally <br> for providing excellent education in a multicultural setting.</p>
-                    
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start Enrollmeent</button>
-                    
+                  
                 </div>
                 <div class="box">
                   <img src="images/cdd.jpg" alt="" class="rounded-circle">
-                  <h3>Mohammed Awal </h3>
-                  <span>Proprietor</span>
-                
+                  <center><h3>Mr. Mohammed Awal </h3></center>
+                 <center> <span><h4><b>Proprietor</b></h4></span> </center> 
                   </div>
             </div>
         </div>
@@ -143,7 +140,7 @@
       </section>
   
       
-      <!-- Learn Sections -->
+      <!-- Mission -->
       <section id="mission" class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
@@ -168,7 +165,7 @@
             <div class="col-md p-5">
               <h2> <b>ABOUT US</b></h2>
               <p class="lead">
-                Our class are clean, light, and airy. The school is well resourced in order to meet the needs.
+                Vision Star Academy is a <b>Day and Boarding</b> school, Our class are clean, light, and airy. The school is well resourced in order to meet the needs.
                 Our curriculum is broadly based on the English national curriculum. However, we ensure that our curriculum does reflect the needs of our rich culture diversity.
               </p>
               <p>
@@ -526,54 +523,41 @@
                 
           
                   </div>
-                  <div class="contact">
-                    <h3>Email Us</h3>
+                  <div id="contact" class="contact">
+                    <h3>Contact Us</h3>
                     <div class="alert">Your message has been sent, thank you</div>
-                    <form action="mail.php" method="POST" onsubmit="sendEmail(); reset(); return false; ">
-                      <p>
-                        <label>First Name</label>
-                        <input type="text" name="name" id="firstname" required>
-                      </p>
-                      <p>
-                        <label>Last Name</label>
-                        <input type="text" name="company" id="lastname">
-                      </p>
-                      <p>
-                        <label>Email Address</label>
-                        <input type="email" name="email" id="email" required>
-                      </p>
-                      <p>
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" id="tel">
-                      </p>
-                      <p class="full">
-                        <label>Message</label>
-                        <textarea name="message" rows="5" id="message"></textarea>
-                      </p>
-                      <p class="full">
-                        <button type="submit">Submit</button>
-                      </p>
-                    </form>
+                    <form action="https://formsubmit.co/visionstaracademy62@gmail.com" method="POST">
+                      <input type="text" name="Name" placeholder="Full Name" required>
+                      <input type="email" name="Email" placeholder="Email" required>
+                      <input type="city" name="City" placeholder="Town/City">
+                  <br>
+                      <textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea> <br>
+                      <button type="submit">Send</button>
+                  </form>
                   </div>
                 </div>
               </div>
-            
+      <section>
+            <div>
+              <div>
+                <div>
+
               <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
               <script src="main.js"></script
                   <center>
                      <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-twitter text-dark mx-1"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-facebook text-dark mx-1"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-instagram text-dark mx-1"></i></a></center>
+                    <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-instagram text-dark mx-1"></i>
+                  </a></center>
             </div>
-            
-          </div>
-        </div>
+             </div>
+              </div>
       </section>
 
   
       <!-- Footer -->
-      <footer class="p-lg-0 bg-dark text-white text-center position-relative">
+      <footer class="p-lg-1 bg-dark text-white text-center position-relative">
         <div class="container">
           <p class="lead">Powered By AfriTech Inc, 2022</p>
   
@@ -602,74 +586,13 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-              <p class="lead">Fill out this form and we will get back to you</p>
-              <form action="mail.php" method="POST" onsubmit="sendEmail(); reset(); return false; ">
-                <div class="mb-3">
-                  <label for="first-name" class="col-form-label">
-                    First Name:
-                  </label>
-                  <input type="text" name="firstname" class="form-control" id="first-name" />
-                </div>
-                <div class="mb-3">
-                  <label for="last-name"  class="col-form-label">
-                    Last Name:
-                </label>
-                  <input type="text" name="lastname" class="form-control" id="last-name" />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="col-form-label">
-                    Email:
-                </label>
-                  <input type="email" name="email" class="form-control" id="email" />
-                </div>
-                <div class="mb-3">
-                  <label for="phone"  class="col-form-label">
-                    Phone:
-                </label>
-                  <input type="tel"  name="tel" class="form-control" id="phone" />
-                  <div class="mb-5">
-                    <label for="phone" class="col-form-label">
-                      Message:
-                  </label>
-                    <input type="text" name="message" class="form-control" id="message" />
-                </div>
-              </form>
-            </div>
-          
-      
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+            
   
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"
       ></script>
-      
-      
-  
-      <script>
-        mapboxgl.accessToken =
-          'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v11',
-          center: [-71.060982, 42.35725],
-          zoom: 18,
-        })
-      </script>
+    
     </body>
   </html>
