@@ -24,16 +24,10 @@
 <body>
 <!--Navbar Section-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0 fixed-top">
-    <div class="container">
-      
-      <a href="/Home/Index" class="navbar-brand myLogo"> 
+    <div class="container nav-container">
         <img src="images/logo.jpg " class="rounded-circle mb-3" alt="Company logo" height="50"/> 
-      <a href="#" class="navbar-brand"> <h5><b>VISION STAR ACADEMY, YENDI</b></h5> </a>
+      <a href="#" class="navbar-brand nav-changes"> <h5 class="header-title"><b>VISION STAR <br class="br-hidden"> ACADEMY, YENDI</b></h5> </a>
 
-      </a>
-      .myLogo{
-        height:auto;
-       }
       
       <button
         class="navbar-toggler"
@@ -47,26 +41,44 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
 
-          <li class="nav-item">
+          <li class="nav-item toggle"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          >
             <a href="#home" class="nav-link">HOME</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item toggle"
+           data-bs-toggle="collapse"
+           data-bs-target="#navmenu"
+          >
             <a href="#mission" class="nav-link">MISSION</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item toggle"
+           data-bs-toggle="collapse"
+           data-bs-target="#navmenu"
+          >
             <a href="#questions" class="nav-link">FAQ</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item toggle"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          >
             <a href="#about" class="nav-link">ABOUT US</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item toggle"
+           data-bs-toggle="collapse"
+           data-bs-target="#navmenu"
+          >
             <a href="#staff" class="nav-link">STAFF</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item toggle"
+           data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+          >
             <a href="#contact" class="nav-link">CONTACT</a>
           </li>
 
@@ -543,7 +555,7 @@
                 <div>
 
               <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-              <script src="main.js"></script
+              <script src="main.js"></script>
                   <center>
                      <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-twitter text-dark mx-1"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100087495930277"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -593,6 +605,40 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"
       ></script>
-    
+         <script>
+          let toggles = document.querySelectorAll(".toggle");
+          toggles.forEach((tog, index) => {
+            tog.addEventListener('click', () => {
+              let position = 100;
+              let offset;
+              switch(index){
+                case 0:
+                  offset = document.getElementById("home").offsetTop;
+                  window.scrollTo(0,offset - position)
+                  break;
+                case 1:
+                  offset = document.getElementById("mission").offsetTop;
+                  window.scrollTo(0,offset - position)
+                  break;
+                case 2:
+                  offset = document.getElementById("questions").offsetTop;
+                  window.scrollTo(0,offset - position)
+                  break;
+                case 3:
+                  offset = document.getElementById("about").offsetTop;
+                  window.scrollTo(0,offset - position)
+                   break  
+                case 4:
+                  offset = document.getElementById("staff").offsetTop;
+                  window.scrollTo(0,offset - position)
+                  break;
+                case 5:
+                  offset = document.getElementById("contact").offsetTop;
+                  window.scrollTo(0,offset - position)
+                  break;
+              }
+            }) 
+          });
+         </script>    
     </body>
   </html>

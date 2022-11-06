@@ -91,7 +91,25 @@ body::before {
     margin-bottom:10px;
     display:none;
   }
+  .br-hidden{
+    display: none;
+  }
   
+  @media only screen and (max-width: 700px) {
+   .nav-changes{
+    font-size: 12px !important;
+  } 
+.br-hidden{
+  display: block;
+ }
+
+.header-title{
+  font-size: 22px !important;
+  text-align: center;
+}
+  }
+  
+
   /* LARGE SCREENS */
   @media(min-width:700px){
     .wrapper{
